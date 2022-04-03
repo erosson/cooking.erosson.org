@@ -1,5 +1,11 @@
 tasks:
-  - init: .gp/init.sh
+  - before: .gp/before.sh
+    init: .gp/init.sh
+    command: yarn serve
+
+ports:
+  - port: 1234
+    onOpen: open-preview
 
 vscode:
   extensions:

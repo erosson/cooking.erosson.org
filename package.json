@@ -1,0 +1,18 @@
+{
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "prestart": "yarn prebuild",
+    "prebuild": "mkdir -p dist; cp -rp public/recipes dist/recipes; python -c 'import os, json; print(json.dumps(os.listdir(\"public/recipes\")))' > public/recipes.json",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "dependencies": {
+    "@cooklang/cooklang-ts": "^1.0.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-elm": "2.4.1",
+    "elm": "^0.19.1-5",
+    "parcel": "^2.4.1"
+  }
+}

@@ -1,1 +1,8 @@
 /bin/cook
+/bin/cue
+/public/recipes.json
+/node_modules
+/elm-stuff
+/.parcel-cache
+/dist
+*.log
