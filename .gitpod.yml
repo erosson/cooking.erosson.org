@@ -1,0 +1,6 @@
+tasks:
+  - init: .gp/init.sh
+
+vscode:
+  extensions:
+    - dubadub.Cooklang
