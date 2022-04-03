@@ -1,8 +1,7 @@
+.DS_Store
+.elm-spa
+elm-stuff
+node_modules
+dist
 /bin/cook
 /bin/cue
-/public/recipes.json
-/node_modules
-/elm-stuff
-/.parcel-cache
-/dist
-*.log

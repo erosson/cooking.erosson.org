@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+const fs = require('fs').promises
+const cooklang = require('@cooklang/cooklang-ts')
+
+async function main() {
+    const files = await fs.readdir('public/recipes')
+    const recipes = await Promise.all(files.map(async file => {
+        const content = await fs.readFile(`public/recipes/${file}`, 'utf8')
+        const recipe = new cooklang.Recipe(content)
+        const json = JSON.parse(recipe.toJSON())
+        return { file, content, json }
+    }))
+    // console.log(recipes)
+    const json = JSON.stringify(recipes, null, 2)
+    // console.log(json)
+    await fs.mkdir('public/dist', { recursive: true })
+    await Promise.all([
+        fs.writeFile('public/dist/recipes-files.json', JSON.stringify(files)),
+        fs.writeFile('public/dist/recipes.json', json),
+    ])
+}
+main().catch(err => {
+    console.error(err)
+    process.exit(1)
+})

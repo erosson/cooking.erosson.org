@@ -10,3 +10,4 @@ ports:
 vscode:
   extensions:
     - dubadub.Cooklang
+    - elmTooling.elm-ls-vscode
