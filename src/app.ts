@@ -8,13 +8,18 @@ async function main() {
         node: document.getElementById("root"),
     })
 
-    const recipes = await Promise.all(recipesList.map(async file => {
-        const response = await fetch(`/recipes/${file}`)
-        const body = await response.text()
-        const recipe = new Recipe(body)
-        const json = JSON.parse(recipe.toJSON())
-        return {file, response, body, recipe, json}
-    }))
-    app.ports.recipes.send(recipes)
+    app.ports.recipeReq.subscribe(async req => {
+        try {
+            const {file} = req
+            const response = await fetch(`/recipes/${file}`)
+            const body = await response.text()
+            const recipe = new Recipe(body)
+            const json = JSON.parse(recipe.toJSON())
+            app.ports.recipeRes.send({status: 'success', file, response, body, recipe, json})
+        }
+        catch (error) {
+            app.ports.recipeRes.send({status: 'error', error})
+        }
+    })
 }
 main()

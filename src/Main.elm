@@ -5,7 +5,11 @@ import Html exposing (Html, button, div, text)
 import Html.Events exposing (onClick)
 
 main =
-  Browser.sandbox { init = init, update = update, view = view }
+  Browser.application
+    { init = init
+    , update = update
+    , view = view
+    }
 
 type alias Model = Int
 

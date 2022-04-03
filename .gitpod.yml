@@ -1,7 +1,7 @@
 tasks:
   - before: .gp/before.sh
     init: .gp/init.sh
-    command: yarn serve
+    command: yarn start
 
 ports:
   - port: 1234

@@ -13,6 +13,7 @@
   "devDependencies": {
     "@parcel/transformer-elm": "2.4.1",
     "elm": "^0.19.1-5",
+    "elm-spa": "^6.0.4",
     "parcel": "^2.4.1"
   }
 }
