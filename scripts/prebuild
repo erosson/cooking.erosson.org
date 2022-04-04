@@ -5,10 +5,11 @@ const cooklang = require('@cooklang/cooklang-ts')
 async function main() {
     const files = await fs.readdir('public/recipes')
     const recipes = await Promise.all(files.map(async file => {
+        const name = file.replace(/\.cook$/, '')
         const content = await fs.readFile(`public/recipes/${file}`, 'utf8')
         const recipe = new cooklang.Recipe(content)
         const json = JSON.parse(recipe.toJSON())
-        return { file, content, json }
+        return { name, file, content, json }
     }))
     // console.log(recipes)
     const json = JSON.stringify(recipes, null, 2)

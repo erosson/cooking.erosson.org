@@ -2,16 +2,18 @@ module Layout exposing (layout)
 
 import Html exposing (..)
 import Shared
+import View exposing (View)
 
 
-layout : Shared.Model -> (Shared.OkModel -> List (Html msg)) -> List (Html msg)
-layout shared viewBody =
+layout : Shared.Model -> (Shared.OkModel -> View msg) -> View msg
+layout shared view =
     case shared of
         Shared.Loading ->
-            [ text "loading..." ]
+            {title="Evan's Recipes", body=[ text "loading..." ]}
+            
 
         Shared.Failure err ->
-            [ text "Error: ", text err ]
+            {title="Evan's Recipes", body=[ text "Error: ", text err ]}
 
         Shared.Success model ->
-            viewBody model
+            view model
