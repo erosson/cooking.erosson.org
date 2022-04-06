@@ -31,12 +31,18 @@ type alias Step =
 type StepNode
     = StepText String
     | StepIngredient Ingredient
+    | StepTime Time
 
 
 type alias Ingredient =
     { name : String
     , quantity : Maybe (Result String Float)
     , units : Maybe String
+    }
+
+type alias Time =
+    { quantity : Result String Float
+    , units : String
     }
 
 
@@ -114,6 +120,8 @@ decodeStepNode =
 
                             "ingredient" ->
                                 D.map StepIngredient decodeIngredient
+                            "timer" ->
+                                D.map StepTime decodeTime
 
                             _ ->
                                 D.fail "invalid stepnode.type"
@@ -134,3 +142,14 @@ decodeIngredient =
                     ]
         )
         (D.field "units" <| D.maybe D.string)
+
+decodeTime : D.Decoder Time
+decodeTime =
+    D.map2 Time
+        (D.field "quantity" <|
+            D.oneOf
+                [ D.float |> D.map Ok
+                , D.string |> D.map Err
+                ]
+        )
+        (D.field "units" D.string)

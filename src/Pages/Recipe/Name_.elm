@@ -59,6 +59,15 @@ renderIngredientQuantity ingr =
                 units : String
                 units = ingr.units |> Maybe.map ((++) " ") |> Maybe.withDefault ""
             in qty ++ units
+renderTimeQuantity : Recipe.Time -> String
+renderTimeQuantity time =
+            let qty : String
+                qty = case time.quantity of
+                    Ok num -> String.fromFloat num
+                    Err str -> str
+                units : String
+                units = time.units
+            in qty ++ " " ++ units
 
 viewStep : Recipe.Step -> List (Html msg)
 viewStep = List.map viewStepNode
@@ -66,10 +75,12 @@ viewStep = List.map viewStepNode
 viewStepNode : Result E.Value Recipe.StepNode -> Html msg
 viewStepNode noderes =
     case noderes of
-        Err json -> text "???"
+        Err json -> span [title <| E.encode 2 json] [text "???"]
         Ok (Recipe.StepText val) -> text val
         -- Ok (Recipe.StepIngredient ingr) -> a [title <| renderIngredientQuantity ingr, href "#"] [text ingr.name]
         Ok (Recipe.StepIngredient ingr) -> 
             case renderIngredientQuantity ingr of
                 "" -> u [] [text ingr.name]
                 qty -> u [] [text ingr.name, text " (", text qty, text ")"]
+        Ok (Recipe.StepTime time) -> 
+            i [] [text <| renderTimeQuantity time]
