@@ -7,6 +7,8 @@ recipes to be website-ified:
         * sub applesauce for 1 banana + 2 chia eggs (2tbsp chia seeds + 6tbsp water)
     * vanilla frosting: https://www.justtherecipe.com/?url=https://www.noracooks.com/vanilla-vegan-frosting/
         * for an oreo cake, mix with oreo cookies. https://mastodon.social/web/@erosson/109000125250869336
+    * vanilla cake: https://www.justtherecipe.com/?url=https://www.noracooks.com/vegan-vanilla-cake/
+    * strawberry frosting: https://www.lifeloveandsugar.com/homemade-strawberry-frosting-two-ways/#tasty-recipes-37440
 * my dinners:
     * lentils + brown rice: not yet written. 1 cup lentils, 1/2 cup brown rice, 3ish cups water, oil and random spices -> rice cooker
     * pasta + cheese sauce
