@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 set -eu
+cd cooking.erosson.org
 WORKSPACE=`pwd`
 TEMPDIR=`mktemp -d`
 cd $TEMPDIR
