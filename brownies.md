@@ -26,7 +26,7 @@ Based on the (non-vegan) brownie recipe on the back of boxed brownie mix, and ma
 3. Blend the banana with a mixer, or mash by hand, until mostly smooth.
 4. Combine the brownie mix with all other ingredients in a large mixing bowl. Mix until smooth, using either a hand mixer or a mixing spoon.
 5. Pour the mix into a greased/nonstick 13" x 9" baking tray.
-  * Optionally, sprinkle some coconut flakes on top of the brownies after pouring. 
-6. Bake at 350f for 27 minutes. Baking is done when an inserted fork comes out clean.
-7. Remove from oven. Let cool for 10 minutes.
-8. Enjoy!
+6. Optionally, sprinkle some coconut flakes on top of the brownies after pouring into the tray. 
+7. Bake at 350f for 27 minutes. Baking is done when an inserted fork comes out clean.
+8. Remove from oven. Let cool for 10 minutes.
+9. Enjoy!
