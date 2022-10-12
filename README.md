@@ -2,7 +2,7 @@
 
 This is my deliberately simple cooking website.
 
-[Photos of my cakes are here](https://mastodon.social/@erosson).
+I'm making lots of cakes these days! [Photos of my cakes are here](https://mastodon.social/@erosson); it's like my only social media
 
 ### Baking
 
