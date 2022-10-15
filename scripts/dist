@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eux
+which pandoc || apt-get install pandoc || sudo apt-get install pandoc
+
+mkdir -p dist
+cp ./src/main.css ./dist/
+
+for src in `ls src/*.md`; do
+    ./scripts/build-md "$src"
+done

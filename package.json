@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "start": "scripts/start",
+        "dist": "scripts/dist"
+    },
+    "devDependencies": {
+        "chokidar-cli": "^3.0.0",
+        "concurrently": "^7.4.0",
+        "serve": "^14.0.1"
+    }
+}

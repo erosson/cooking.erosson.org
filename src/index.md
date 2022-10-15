@@ -17,3 +17,5 @@ I'm making lots of cakes these days! [Photos of my cakes are here](https://masto
 https://www.noracooks.com/ is my favorite place to look for new baking recipes. (Naturally I'll search with Google, but tend to click noracooks links first.) I'll often try different egg substitutes, based on what I like most and what I have in the kitchen.
 
 [Other incomplete recipes](TODO.md)
+
+[Source](https://github.com/erosson/recipes)

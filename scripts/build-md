@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+src="$1";shift
+base="`basename "$src" .md`"
+
+rm -f "./dist/$base.html"
+pandoc -f markdown+autolink_bare_uris -t html --template src/template.html --lua-filter=./src/pandoc-links-to-html.lua -o "./dist/$base.html" "$src"

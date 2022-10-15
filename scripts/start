@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+which pandoc || apt-get install pandoc || sudo apt-get install pandoc
+
+rm -rf ./dist
+./scripts/dist
+
+concurrently -k \
+    "chokidar \"src/*.css\" -c \"cp {path} ./dist\" " \
+    "chokidar \"src/*.md\" -c \"./scripts/build-md {path}\" " \
+    "serve dist"
