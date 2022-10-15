@@ -1,7 +1,5 @@
 #!/bin/sh
 set -eu
-which pandoc || apt-get install pandoc || sudo apt-get install pandoc
-
 rm -rf ./dist
 ./scripts/dist
 
