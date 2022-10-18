@@ -20,6 +20,8 @@ I'm making lots of cakes these days! [Photos of my cakes are here](https://masto
   * many other recipes use biscuits, but I grew up using tiny one-person cakes
   * stop&shop says it has veg heavy cream, or of course we can use coconut cream (but not everyone likes that much coconut)
 
+---
+
 https://www.noracooks.com/ is my favorite place to look for new baking recipes. (Naturally I'll search with Google, but tend to click noracooks links first.) I'll often try different egg substitutes, based on what I like most and what I have in the kitchen.
 
 [Other incomplete recipes](TODO.md)
