@@ -18,6 +18,7 @@ I'm making lots of cakes these days! [Photos of my cakes are here](https://masto
 
 * [Strawberry shortcake (via FlouredFrame)](https://flouredframe.com/vegan-strawberry-shortcake/)
   * many other recipes use biscuits, but I grew up using tiny one-person cakes
+  * stop&shop has veg heavy cream - or of course we can use coconut cream as the base
 
 https://www.noracooks.com/ is my favorite place to look for new baking recipes. (Naturally I'll search with Google, but tend to click noracooks links first.) I'll often try different egg substitutes, based on what I like most and what I have in the kitchen.
 
