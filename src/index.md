@@ -20,6 +20,7 @@ I'm making lots of cakes these days! [Photos of my cakes are here](https://masto
   * many other recipes use biscuits, but I grew up using tiny one-person cakes
   * stop&shop says it has veg heavy cream, or of course we can use coconut cream (but not everyone likes that much coconut)
 * mint + chocolate cake
+* pumpkin pie cupcakes: https://www.thelittleblogofvegan.com/2022/09/mini-vegan-pumpkin-pies.html
 
 ---
 
