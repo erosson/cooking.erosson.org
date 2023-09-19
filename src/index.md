@@ -8,7 +8,7 @@ I'm making lots of cakes these days! <a rel="me" href="https://mastodon.social/@
 
 * [Coconut banana brownies](brownies.md)
 * [Chocolate cake/cupcakes and chocolate frosting (via Noracooks)](https://www.justtherecipe.com/?url=https://www.noracooks.com/vegan-chocolate-cake/), with the following modifications:
-  * Cake base: substitute [applesauce] for [1 banana + 2 chia eggs]. (1 chia egg = 1 tbsp chia seeds + 3 tbsp water, mix and soak for 5 minutes) After lots of experiments, this is my favorite egg substitute
+  * Cake base: substitute [applesauce] for [1 banana + 2 [chia eggs](https://cooking.erosson.org/chia-egg)]. After lots of experiments, this is my favorite egg substitute
   * Cake base and frosting: coconut oil is best. It melts when it's hot enough outside, so store in the fridge when possible
   * Cake frosting: I use 1/2 cup coconut oil instead of (expensive and mysterious) fake butter
 * [Vanilla frosting (via Noracooks)](https://www.justtherecipe.com/?url=https://www.noracooks.com/vanilla-vegan-frosting/)
