@@ -2,6 +2,7 @@
 set -eu
 src="$1";shift
 base="`basename "$src" .md`"
+[ -f "`dirname "$0"`/../vendor/pandoc" ] || .devcontainer/setup.sh
 
 rm -f "./dist/$base.html"
-pandoc -f markdown+autolink_bare_uris -t html --template src/template.html --lua-filter=./src/pandoc-links-to-html.lua -o "./dist/$base.html" "$src"
+"`dirname "$0"`/../vendor/pandoc" -f markdown+autolink_bare_uris -t html --template src/template.html --lua-filter=./src/pandoc-links-to-html.lua -o "./dist/$base.html" "$src"
