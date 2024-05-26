@@ -1,0 +1,7 @@
+vendor
+node_modules
+dist
+.yarn
+.svelte-kit
+Dockerfile
+docker-compose.yml
